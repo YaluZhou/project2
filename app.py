@@ -9,7 +9,7 @@ from sqlalchemy.orm import Session
 
 from sqlalchemy import create_engine, func, inspect
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 
 
 ###Database Setup###
@@ -31,11 +31,11 @@ engine = create_engine(f'postgresql://{connection_string}')
 
 app = Flask(__name__)
 
-##to render the index.html file here
+##Render the index.html file here
 @app.route("/")
-def home():
-    print("Server received request for 'Home' page...")
-    return "Welcome to Covid Data page for Chicago!"
+def index():
+    """Return the homepage."""
+    return render_template("index.html")
 
 @app.route("/covid")
 def covid_data():
