@@ -16,11 +16,11 @@ CREATE TABLE covid (
 	"Percent Tested Positive - Cumulative" INT,
 	"Deaths - Weekly" INT,
 	"Deaths - Cumulative" INT,
-	"Death Rate - Weekly" INT,
-	"Death Rate - Cumulative" INT,
 	"Population" INT,
 	"Row ID" TEXT,
-	"ZIP Code Location" TEXT
+	"ZIP Code Location" TEXT,
+	"Positive Test Rate" INT,
+	"Death Rate" INT
 );
 
 CREATE TABLE census (
@@ -39,5 +39,4 @@ CREATE TABLE census (
 	"Hawaiian and Other Pacific Islander" INT,
 	"Two or More Mixed" INT,
 	"Other" INT
-
 );
