@@ -12,6 +12,7 @@ from sqlalchemy import create_engine, func, inspect
 from flask import Flask, jsonify, render_template
 
 
+
 ###Database Setup###
 # Set Connection String
 connection_string = "postgres:postgres@localhost:5432/covid_db"
@@ -19,14 +20,6 @@ connection_string = "postgres:postgres@localhost:5432/covid_db"
 # Set Engine
 engine = create_engine(f'postgresql://{connection_string}')
 
-# reflect an existing database into a new model
-#Base = automap_base()
-# reflect the tables
-#Base.prepare(engine, reflect=True)#
-
-# Save reference to the table
-#Covid = Base.classes.covid
-#census = Base.classes.census
 
 
 app = Flask(__name__)
@@ -49,6 +42,8 @@ def census_data():
     census = pd.read_sql("SELECT * FROM public.census", con=engine)
     census_json = census.to_dict(orient="records")
     return jsonify(census_json)
+
+
 
 
 if __name__ == "__main__":
