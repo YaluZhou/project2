@@ -14,6 +14,7 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 var queryUrl = "/static/COVID-19.geojson";
 d3.json(queryUrl).then(function(response) {
+  console.log(response)
   var heatArray = [];
   for (var i = 0; i < response.features.length; i++) {
     var location = response.features[i];
