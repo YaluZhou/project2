@@ -114,6 +114,9 @@ function barChart(zip){
   xaxis: {
     tickangle: 45,
   },
+  
+    paper_bgcolor:'rgba(0,0,0,0)',
+    plot_bgcolor:'rgba(0,0,0,0)',
   };
   
   d3.select('#bar').html('');
@@ -151,7 +154,11 @@ function lineChart(zip){
       },
       yaxis: {
         title: '% of Test Positive/Death Rate'
-      }
+      },
+  
+      paper_bgcolor:'rgba(0,0,0,0)',
+      plot_bgcolor:'rgba(0,0,0,0)',
+     
     };
     
 

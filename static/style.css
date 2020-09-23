@@ -20,11 +20,13 @@
     width: :600px;
     height: 400px;
     align:center;
+    
 }
 
 #bar{
     width: :600px;
     height: 400px;
+    
 }
 
 img {
@@ -35,9 +37,11 @@ img {
     font-size: 0.75rem
 }
 body{
-    background-color:rgb(210, 240, 223);
+   /* background-color:rgba(9, 111, 26, 0.219);*/
+    background-color:rgba(7, 199, 138, 0.219);
     
 }
+
 
 .jumbotron{
     background-image: url("https://images.unsplash.com/photo-1524168272322-bf73616d9cb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
@@ -76,7 +80,37 @@ body{
     cursor: pointer;
 }
 
-
+.section-heading h6 {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.section-heading h2 {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+/* PARAGRAPH ELEMENT - TEXT COLOR (ALEJANDRO, ANU, KORBIN, YALU) */
+p {
+    margin: 0.5rem 0;
+    /* color: #fff; */
+    color: black;
+    /* color: yellow; */
+    font-weight: 700;
+}
+/* a tag ELEMENT - TEXT COLOR (ALEJANDRO, ANU, KORBIN, YALU) */
+a {
+    margin: 0.5rem 0;
+    /* color: #fff; */
+    /* color: black; */
+    color: yellow;
+    font-weight: 600;
+}
 
 
 
