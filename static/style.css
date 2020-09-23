@@ -1,49 +1,49 @@
-
-
-.panel-primary{
-    border-color:#dddddd;
-    border:2px  black;
+.panel-primary {
+    border-color: #dddddd;
+    border: 2px black;
 }
 
-#heat-map{
-    
-    width:850px;
-    height:550px;
-} 
+#heat-map {
 
-
-#marker-map{
-    width:850px;
-    height:550px;
+    width: 850px;
+    height: 550px;
 }
-#bubble{
-    width: :600px;
+
+
+#marker-map {
+    width: 850px;
+    height: 550px;
+}
+
+#bubble {
+    width: 600px;
     height: 400px;
-    align:center;
-    
+    align-content: center;
+
 }
 
-#bar{
-    width: :600px;
+#bar {
+    width: 600px;
     height: 400px;
-    
+
 }
 
 img {
     width: 100%;
 }
 
-#sample-metadata{
+#sample-metadata {
     font-size: 0.75rem
 }
-body{
-   /* background-color:rgba(9, 111, 26, 0.219);*/
-    background-color:rgba(7, 199, 138, 0.219);
-    
+
+body {
+    /* background-color:rgba(9, 111, 26, 0.219);*/
+    background-color: rgba(7, 199, 138, 0.219);
+
 }
 
 
-.jumbotron{
+.jumbotron {
     background-image: url("https://images.unsplash.com/photo-1524168272322-bf73616d9cb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
     background-position: center;
 }
@@ -77,7 +77,8 @@ body{
 
 .tabs .container>div:hover {
     color: #fff;
-    cursor: pointer;
+    /* cursor: pointer; */
+    cursor: not-allowed;
 }
 
 .section-heading h6 {
@@ -88,6 +89,7 @@ body{
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
 .section-heading h2 {
     font-size: 32px;
     font-weight: 800;
@@ -95,6 +97,7 @@ body{
     margin-top: 20px;
     margin-bottom: 0px;
 }
+
 /* PARAGRAPH ELEMENT - TEXT COLOR (ALEJANDRO, ANU, KORBIN, YALU) */
 p {
     margin: 0.5rem 0;
@@ -103,14 +106,12 @@ p {
     /* color: yellow; */
     font-weight: 700;
 }
+
 /* a tag ELEMENT - TEXT COLOR (ALEJANDRO, ANU, KORBIN, YALU) */
 a {
     margin: 0.5rem 0;
     /* color: #fff; */
     /* color: black; */
-    color: yellow;
+    color: rgba(19, 23, 224, 0.733);
     font-weight: 600;
 }
-
-
-
